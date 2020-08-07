@@ -646,7 +646,7 @@ input[type='checkbox'] {
 
 .navbar-custom .navbar-brand.logo-text {
 	font: 600 2rem/1.5rem "Raleway", sans-serif;
-	color: #393939;
+	color: #fff !important;
 	text-decoration: none;
 }
 
@@ -657,14 +657,14 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link {
 	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
-	color: #393939;
+	color: #fff !important;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #00bfd8;
+	color: #32e0c4 !important;;
 }
 
 /* Dropdown Menu */
@@ -696,7 +696,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item {
-	color: #393939;
+	color: #fff !important;
 	text-decoration: none;
 }
 
@@ -728,7 +728,7 @@ input[type='checkbox'] {
 
 .navbar-custom .navbar-toggler {
 	border: none;
-	color: #393939;
+	color: #fff !important;
 	font-size: 2rem;
 }
 
@@ -1386,7 +1386,7 @@ input[type='checkbox'] {
 }
 
 .basic-4 .fa-stack-2x {
-	color: #00bfd8;
+	color: #32e0c4;
 	transition: all 0.2s ease;
 }
 
@@ -1396,7 +1396,7 @@ input[type='checkbox'] {
 }
 
 .basic-4 .fa-stack:hover .fa-stack-2x {
-	color: #00a7bd;
+	color: #32e0c4;
 }
 
 .basic-4 .fa-stack:hover .fa-stack-1x {
@@ -1494,7 +1494,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #00bfd8;
+	color: #32e0c4;
 	transition: all 0.2s ease;
 }
 
@@ -1503,7 +1503,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #00a7bd;
+    color: #32e0c4;
 }
 
 
@@ -1812,7 +1812,7 @@ a:hover.back-to-top {
 	}
 	
 	.navbar-custom .fa-stack-2x {
-		color: #00bfd8;
+		color: #32e0c4;
 		transition: all 0.2s ease;
 	}
 	
@@ -1826,11 +1826,11 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom .fa-stack:hover .fa-stack-1x {
-		color: #00bfd8;
+		color: #32e0c4;
 	}
 
 	.navbar-custom.top-nav-collapse .fa-stack-2x {
-		color: #00bfd8;
+		color: #32e0c4;
 	}
 	
 	.navbar-custom.top-nav-collapse .fa-stack-1x {
@@ -1838,7 +1838,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse .fa-stack:hover .fa-stack-2x {
-		color: #00a7bd;
+		color: #32e0c4;
 	}
 	
 	.navbar-custom.top-nav-collapse .fa-stack:hover .fa-stack-1x {
