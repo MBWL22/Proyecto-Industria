@@ -92,7 +92,7 @@
           <div id="right-block" class=" col-sm-10 col-md-5 offset-md-5 ">
             <div id="msg-welcome">Bienvenido</div>
             <div name="group">
-              <div class="msg-datos">Correo</div>
+              <div class="msg-datos">Correo o nombre de usuario</div>
               <input type="email" class="form-control login-box" id="login-usuario" onkeyup="writetxt()">
               <div id="validacion-email-bad">
                   Email Invalido
