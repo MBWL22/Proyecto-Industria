@@ -101,7 +101,7 @@
             <div class="row">
                         <div class="container">
                             <h1>Nuevo Usuario</h1>
-                            <form class="needs-validation cf" id="fr" novalidate method="POST">
+                            <form class="needs-validation cf" id="fr" novalidate>
                                 <div class="half left cf">
                                     <label for ="input-name" id="izq"> Nombres </label>
                                     <input class="form-control" type="text" id="input-name" name="nombre" placeholder="Ingrese nombres" required>
@@ -129,25 +129,7 @@
 </header> <!-- end of header -->
 <!-- end of header -->
 
-<script>
-    (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-            form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-</script>
+
   
 
     <!-- Footer -->
@@ -209,6 +191,7 @@
     
     	
     <!-- Scripts -->
+    <script src="js/data.js"></script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
