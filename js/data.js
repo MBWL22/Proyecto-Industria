@@ -31,7 +31,7 @@ let usuarios = [{
     id: 2,
     tipoUsuario: 1,
     nombre: 'Diana',
-    apellido: 'Sanchéz',
+    apellido: 'Sánchez',
     nombreUsuario: 'DYSC',
     contrasena: 'asd.456',
     correo: 'ejemplo2@gmail.com',
