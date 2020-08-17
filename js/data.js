@@ -18,14 +18,14 @@ let usuarios = [{
     fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
     publicaciones: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantiu' , 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantium maiores perspiciatis officia labore'],
     servicios: [{
-        categoria: 'Carpinteria',
-        descripcion: 'trabajo con madera pura.'
+        categoria: 'Carpintería',
+        descripcion: 'Trabajo con madera pura.'
     },
     {
-        categoria: 'Mecanica',
-        descripcion: 'trabajos de mecanica automotriz.'
+        categoria: 'Mecánica',
+        descripcion: 'Trabajos de mecánica automotriz.'
     }],
-    descripcion: '10 años de experiencia en carpinteria y 15 años en mecanica'
+    descripcion: '10 años de experiencia en carpintería y 15 años en mecánica'
 },
 {
     id: 2,
@@ -40,7 +40,7 @@ let usuarios = [{
     publicaciones: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantiu' , 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantium maiores perspiciatis officia labore'],
     servicios: [{
         categoria: 'Estilista',
-        descripcion: 'trabajo con madera pura'
+        descripcion: ''
     },
     {
         categoria: 'Cocinera',

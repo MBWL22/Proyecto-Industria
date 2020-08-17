@@ -92,5 +92,49 @@ a{
     }
 }
 /* Estilos área de visualización de los servicios*/
-
+.cont-servicios{
+    margin-top: 25%;
+}
+.servicios{
+    width: 100%;
+    padding: 5% 6% 5% 6%;
+    background-color: #32e0c4;
+}
+.img-perfil{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+}
+.cont-img{
+    float: left;
+}
+.informacion{
+    float: left;
+    margin-left: 3%;
+}
+.nombre{
+    font-size: 1.5rem;
+}
+.trabajo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #393e46;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.descripcion{
+    font-size: 1rem;
+}
+.btn-mas-inf{
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: solid 1px #32e0c4;
+    color: #32e0c4;
+    font-size: 1rem;
+}
+.btn-mas-inf:hover{
+    background-color: #32e0c4;
+    color: #393e46;
+}
 
