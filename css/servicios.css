@@ -30,7 +30,7 @@ a{
     background-color: #393e46;
 }
 .categoria{
-    width: 12.5%;
+    width: 10%;
     float: left;
     padding:1% 1%;
     background-color: #32e0c4;
@@ -70,9 +70,17 @@ a{
     background-color: #32e0c39a;
     cursor: pointer;
 }
+#cat-9:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-10:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
 @media (max-width: 930px) {
     .categoria{
-        width: 25%;
+        width: 20%;
         border-bottom: 1px solid #222831;
         border-left: 1px solid #222831;
     }
