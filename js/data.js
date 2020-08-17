@@ -1,9 +1,10 @@
 /*
-TIPOS DE USARIOS 
-0 para normal 
+TIPOS DE USARIOS  
 1 para usuario que ofrece sus serivicios
 2 para usuario admon
 */
+
+
 let usuarios = [{
     id: 1,
     tipoUsuario: 1,
@@ -47,17 +48,6 @@ let usuarios = [{
     descripcion: 'experta en cortes de cabello. Mi plato especial es el spagettie (lo unico que se hacer).'
 },
 {
-    id: 3,
-    tipoUsuario: 0,
-    nombre: 'Ledys',
-    apellido: 'Santos',
-    nombreUsuario: 'Lidis',
-    contrasena: 'asd.456',
-    correo: 'ejemplo3@gmail.com',
-    telefono:'93765469',
-    fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
-},
-{
     id: 4,
     tipoUsuario: 2,
     nombre: 'Michael',
@@ -69,8 +59,7 @@ let usuarios = [{
     fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
 },];
 
-
-console.log(getOficios())
+/* console.log(getOficios())
 // console.log(usuarios[0].servicios[0].categoria); EJEMPLO DE COMO ACCEDER A UN ATTR
 
 function getOficios(){
@@ -84,4 +73,4 @@ function getOficios(){
         }
     }
     return usuarioOficio;
-}
+} */
