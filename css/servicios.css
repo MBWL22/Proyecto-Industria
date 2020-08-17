@@ -137,4 +137,66 @@ a{
     background-color: #32e0c4;
     color: #393e46;
 }
-
+/* Estilos de la ventana modal con la información detallada de los usuarios*/
+.cont-img-informacion{
+    text-align: center;
+}
+.img-informacion{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+.nombre-informacion{
+    font-size: 2rem;
+    color: #222831;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+.informacion-completa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+.dato{
+    padding-left: 5px;
+}
+.cont-descripcion-completa{
+    margin-top: 3%;
+    text-align: center;
+}
+.descripcion{
+    margin-top: 3%;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.btn-modal{
+    padding: 4px 10px 4px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-cerrar{
+    border: solid 1px #393e46;
+    background-color: #393e46;
+    color: white;
+}
+.btn-contactar{
+    border: solid 1px #32e0c4;
+    background-color: #32e0c4;
+    color: white;
+}
+.btn-cerrar:hover{
+    background-color: #222831;
+    color: white;
+}
+.btn-contactar:hover{
+    background-color: #24bea5;
+    color: white;
+}
+#masInformacion{
+    background: linear-gradient(to right, #393e46a8, #32e0c3a8) !important;  
+}
