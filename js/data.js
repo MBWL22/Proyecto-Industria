@@ -16,14 +16,14 @@ let usuarios = [{
     correo: 'ejemplo@gmail.com',
     telefono:'88765432',
     fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
-    publicaciones: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantiu' , 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantium maiores perspiciatis officia labore'],
+    publicaciones: ['Muy buenas tardes compatriotas en esta tarde quisiera compartirles mis servicios de carpinteria, se hace de todo, mesas, sillas. mi número se encuntra en mi perfil, espero estar en contacto con ud pronto, que tenga lindo día.' , 'Buenas, si ud tiene algun problema con su coche contacteme por chat o en el número anclado a mi perfil, será un placer ayudarle.'],
     servicios: [{
         categoria: 'Carpintería',
-        descripcion: 'Trabajo con madera pura.'
+        descripcion: 'experto con el uso de maderas puras.'
     },
     {
         categoria: 'Mecánica',
-        descripcion: 'Trabajos de mecánica automotriz.'
+        descripcion: 'Trabajos de mecánica automotriz general.'
     }],
     descripcion: '10 años de experiencia en carpintería y 15 años en mecánica'
 },
@@ -37,16 +37,84 @@ let usuarios = [{
     correo: 'ejemplo2@gmail.com',
     telefono:'98745432',
     fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
-    publicaciones: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantiu' , 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus quae veritatis accusamus laudantium reiciendis officiis, numquam iusto quas ullam. Tempora amet commodi voluptatum quisquam laudantium accusantium maiores perspiciatis officia labore'],
+    publicaciones: ['Les invito a visitar el salón de belleza toxin, para sus cortes de cabello o arreglo de uñas. Estamos ubicados en el blvd Fuerzas armadas frente a colonia las brisas, sera un placer atenderle.' , 'En tiempos de COVID les ofrecemos envios a domicilio de mis deliciosos platillos, contacte conmigo para poder preparar su envio.'],
     servicios: [{
         categoria: 'Estilista',
-        descripcion: ''
+        descripcion: 'Especialista en arreglo de uñas y alisado de cabello.'
     },
     {
         categoria: 'Cocinera',
-        descripcion: 'trabajos de mecanica automotriz'
+        descripcion: 'Especialista en pastas.'
     }],
     descripcion: 'experta en cortes de cabello. Mi plato especial es el spagettie (lo unico que se hacer).'
+},
+{
+    id: 6,
+    tipoUsuario: 1,
+    nombre: 'Jaime',
+    apellido: 'Paguaga',
+    nombreUsuario: 'Jaipa',
+    contrasena: 'asd.456',
+    correo: 'ejemplo10@gmail.com',
+    telefono:'98745432',
+    fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
+    publicaciones: ['En esta día quisiera ofrecer mis servicios como albañil, se cobra por obra terminada y se hace en el menor tiempo posible, un trabajo honesto y bien hecho, contactenme, buen día.'],
+    servicios: [{
+        categoria: 'Albañil',
+        descripcion: 'Obras de hogar y construcción de edificios.'
+    }],
+    descripcion: 'He sido albañil desde el 2000, habiendo trabajado en proyectos grandes como la construcción del edificio mas alto de tegucigalpa y en la creación de lindas viviendas tanto en barrios como residenciales.'
+},
+{
+    id: 7,
+    tipoUsuario: 1,
+    nombre: 'Lorena',
+    apellido: 'López',
+    nombreUsuario: 'Lore',
+    contrasena: 'asd.456',
+    correo: 'ejemplo10@gmail.com',
+    telefono:'98775232',
+    fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
+    publicaciones: ['Si a ud se le arruinó su lavadora, licuadora, plancha, lo que sea! No dude en contactarme para devolver a la vida sus electrodomestico, sera un placer ayudarle, en mi perfil está anclado para poder contactarme.'],
+    servicios: [{
+        categoria: 'Técnico en reparaciones',
+        descripcion: 'Reparaciones de dispositivos electrodomesticos.'
+    }],
+    descripcion: 'Graduada como técnico electronico tengo todas las facultades y conocimientos necesarios para poder servirle y ayudarle de la manera que ud se merece.'
+},
+{
+    id: 8,
+    tipoUsuario: 1,
+    nombre: 'Juan',
+    apellido: 'Cuña',
+    nombreUsuario: 'Juan1904',
+    contrasena: 'asd.456',
+    correo: 'ejemplo10@gmail.com',
+    telefono:'88735432',
+    fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
+    publicaciones: ['Para cualquier evento, baby shower, cumpleaños, sus 15, lo que sea! Se le ofrece comida gourmet llevada hasta la puerta de su casa respetando todas las normas de bioseguridad.'],
+    servicios: [{
+        categoria: 'Cocinero',
+        descripcion: 'Especialista en comida gourmet.'
+    }],
+    descripcion: 'Cocinero de principio empirico, habiendo sacado cursos de manera online en conocimientos de comidas europeas, si quiere probar el sazón de oriente soy su mejor opción.'
+},
+{
+    id: 9,
+    tipoUsuario: 1,
+    nombre: 'Rodolfo',
+    apellido: 'Sandoval',
+    nombreUsuario: 'Fofo1904',
+    contrasena: 'asd.456',
+    correo: 'ejemplo10@gmail.com',
+    telefono:'95735432',
+    fotoPerfil: 'https://images.vectorhq.com/images/previews/4e1/female-user-icon-clip-art-92637.png',
+    publicaciones: ['Ud sabe que la energía electrica de su casa es un tema delicado, asi que le ofrezco mis servicios como electricista con bastos años de experiencia, respetando todas las normas actuales para la instalción electricas actual, espero su mensaje o llamada, que tengan un lindo día.'],
+    servicios: [{
+        categoria: 'Electricista',
+        descripcion: 'Instalaciones electricas de hogar e industriales.'
+    }],
+    descripcion: 'Graduado como técnico electricista contando con mas de 20 años de experiencia y manteniendome siempre al día con los estandares de instalaciones electrivas le aseguro ser su mejor opción.'
 },
 {   id: 3,
     tipoUsuario: 0,
