@@ -68,29 +68,44 @@ function inicio(){
     // validando que los campos no esten vacios para ejecutar la peticion.
     if (validarCampoVacio("login-usuario") &&
         validarCampoVacio("login-password")) {
-        let parametros = "usuario="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
-        $.ajax({
-            url: 'php/login-usuario.php',
-            data: parametros,
-            method: 'POST',
-            dataType:'JSON',
-            success:function(res){
-                // el php devuelve un codigo y un mensaje, 0 para credenciales validas y 1 para invalidas.
-                // se puede loggear tanto con nombreUsuario como con correo.
-                console.log(res);
-                if ( res.codigoRespuesta == 0 ){
-                    // OJOOOOOO: INSERTAR CODIGO DE REDIRECCIÓN AQUÍ
-                    console.log(res.mensaje);
-                } else if ( res.codigoRespuesta == 1 ){
-                    alert(res.mensaje);
-                }
-            },
-            error:function(err){
-                console.log(err);
-            }
-        })
 
+       let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+       let nombreUsuario = document.getElementById("login-usuario").value;
+       let contrasena = document.getElementById("login-password").value;
+
+       for (usuario of usuarios){
+            if(usuario.tipoUsuario == 0 &&  ( usuario.nombreUsuario == nombreUsuario || usuario.correo == nombreUsuario ) && usuario.contrasena ==  contrasena ){
+                // REDIRECCIONAR AQUI
+                // window.location = '';
+            }
+       }
     }
     
 }
 
+
+
+
+
+
+ // let parametros = "usuario="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
+        // $.ajax({
+        //     url: 'php/login-usuario.php',
+        //     data: parametros,
+        //     method: 'POST',
+        //     dataType:'JSON',
+        //     success:function(res){
+        //         // el php devuelve un codigo y un mensaje, 0 para credenciales validas y 1 para invalidas.
+        //         // se puede loggear tanto con nombreUsuario como con correo.
+        //         console.log(res);
+        //         if ( res.codigoRespuesta == 0 ){
+        //             // OJOOOOOO: INSERTAR CODIGO DE REDIRECCIÓN AQUÍ
+        //             console.log(res.mensaje);
+        //         } else if ( res.codigoRespuesta == 1 ){
+        //             alert(res.mensaje);
+        //         }
+        //     },
+        //     error:function(err){
+        //         console.log(err);
+        //     }
+        // })
