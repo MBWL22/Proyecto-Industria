@@ -12,12 +12,11 @@ TIPOS DE SERVICIOS
 2 belleza
 3 mecanica
 4 construccion
-5 motorista
-6 fletes
-7 concina
-8 abogados
-9 doctores
-10 tutores de aprendizaje
+5 fletes
+6 concina
+7 abogados
+8 doctores
+9 tutores de aprendizaje
 */
 
 let usuarios = [{
