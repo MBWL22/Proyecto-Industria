@@ -15,6 +15,7 @@ if (isset($_POST)){
             $respuesta['mensaje'] = 'las credenciales no coinciden';
         }
     }
+    fclose($archivo);
 }
 
 
