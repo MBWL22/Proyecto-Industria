@@ -71,7 +71,7 @@ let usuarios = [{
 },];
 
 
-//localStorage.setItem('usuarios', JSON.stringify(usuarios) );
+//ocalStorage.setItem('usuarios', JSON.stringify(usuarios) );
 /* console.log(JSON.parse( localStorage.getItem('usuarios')) ); */
 
 
@@ -89,7 +89,7 @@ let usuarios = [{
             event.preventDefault();
             event.stopPropagation();
           }else{
-              alert("Hola");
+             
               for (let i = 0; i < usuarios.length; i++) {
                   var element = usuarios[i].id;
               }
@@ -106,8 +106,8 @@ let usuarios = [{
                 fotoPerfil: null
             }
             usuarios.push(nuevoUsuario);
-            localStorage.setItem('usuarios', JSON.stringify(usuarios) );
-          }
+            localStorage.setItem('usuarios', JSON.stringify(usuarios) );  
+        }
             form.classList.add('was-validated');
         }, false);
       });
