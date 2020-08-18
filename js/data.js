@@ -85,7 +85,6 @@ let usuarios = [{
       Array.prototype.filter.call(forms, function(form) {
         form.addEventListener('submit', function(event) {
           if (form.checkValidity() === false) {
-            alert("hola");
             event.preventDefault();
             event.stopPropagation();
           }else{
