@@ -76,7 +76,7 @@ function inicio(){
        for (usuario of usuarios){
             if(usuario.tipoUsuario == 0 &&  ( usuario.nombreUsuario == nombreUsuario || usuario.correo == nombreUsuario ) && usuario.contrasena ==  contrasena ){
                 // REDIRECCIONAR AQUI
-                // window.location = '';
+                window.location = 'servicios.html';
             }
        }
     }
