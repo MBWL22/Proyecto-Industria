@@ -323,7 +323,8 @@ let usuarios = [{
             event.preventDefault();
             event.stopPropagation();
           }else{
-             
+            event.preventDefault();
+            event.stopPropagation();
               for (let i = 0; i < usuarios.length; i++) {
                   var element = usuarios[i].id;
               }
@@ -340,13 +341,14 @@ let usuarios = [{
                 fotoPerfil: null
             }
             usuarios.push(nuevoUsuario);
-            localStorage.setItem('usuarios', JSON.stringify(usuarios) );  
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+            window.location = 'login.html';
         }
-            form.classList.add('was-validated');
-        }, false);
-      });
+        form.classList.add('was-validated'); 
+           }, false);
+       });
     }, false);
-  })();
+    })();
 
 
 
