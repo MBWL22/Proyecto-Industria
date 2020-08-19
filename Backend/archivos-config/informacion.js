@@ -473,4 +473,244 @@ db.usuarios.insert([
             },
         ]
     },
+    {
+        primerNombre: 'Héctor',
+        segundoNombre: 'José',
+        primerApellido: 'Bardales',
+        segundoApellido: 'Sánchez',
+        edad: 21,
+        telefono: 89258876,
+        correo: 'hector@gmail.com',
+        nombreUsuario: '@hector',
+        password: '1234',
+        fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Carpintero profesional',
+            descripcionServicio: 'Especialista en confeccion de muebles de cocina.',
+            categoria: 1,
+            publicaciones: [
+                {
+                    contenido: 'Estantes de cocina de madera pura.',
+                    imagen: 'https://http2.mlstatic.com/muebles-de-cocina-a-medida-modernos-y-tradicionales-D_NQ_NP_770526-MLC32301581384_092019-F.jpg'
+                },
+                {
+                    contenido: 'Isla hecha completamente de madera para el centro de tu cocina.',
+                    imagen: 'https://casaydiseno.com/wp-content/uploads/2020/04/islas-de-cocina-clasica.jpg'
+                },
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Doctor',
+            descripcionServicio: 'Especialista en enfermedades cardio respiratorias.',
+            categoria: 10,
+            publicaciones: [
+                {
+                    contenido: 'Consultas a domicilio en estos tiempos de pandemia respetando todos los protocolos de bioseguridad.',
+                    imagen: 'https://ak.picdn.net/shutterstock/videos/4192342/thumb/1.jpg'
+                }
+            ]
+        }]
+    },
+    {
+        primerNombre: 'Montserrat',
+        segundoNombre: 'Nazareth',
+        primerApellido: 'Sánchez',
+        segundoApellido: 'Bonilla',
+        edad: 22,
+        telefono: 98251934,
+        correo: 'montse@gmail.com',
+        nombreUsuario: '@montse',
+        password: '1234',
+        fotoPerfil: 'https://media.metrolatam.com/2019/07/13/cabello-2f2578c29f86795d310ba05b0b7a235d-1200x600.jpg',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Sastre profesional',
+            descripcionServicio: 'Especialista manufactura y arreglo de cualquier prenda o zapato.',
+            categoria: 2,
+            publicaciones: [
+                {
+                    contenido: 'Ultimo arreglo hecho, clienta feliz.',
+                    imagen: 'https://i.pinimg.com/564x/3f/c0/41/3fc041a24d6e55bce1ee3374bfe8a3d6.jpg'
+                },
+                {
+                    contenido: 'Arreglo de zapatos de hombre o mujer.',
+                    imagen: 'https://growlermag-media.s3.amazonaws.com/011717_Growler_Georges_041.jpg'
+                },
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Cocinera',
+            descripcionServicio: 'Especialista comidas gourmet.',
+            categoria: 7,
+            publicaciones: [
+                {
+                    contenido: 'Exquisitos platillos para cualquier evento que se presente.',
+                    imagen: 'https://assets.bonappetit.com/photos/5e7a6c79edf206000862e452/8:5/w_2295,h_1434,c_limit/Cooking-Home-Collection.jpg'
+                }
+            ]
+        }]
+    },
+    {
+        primerNombre: 'Carlos',
+        segundoNombre: 'Wilfredo',
+        primerApellido: 'Banegas',
+        segundoApellido: 'Lopez',
+        edad: 22,
+        telefono: 38871934,
+        correo: 'carlos@gmail.com',
+        nombreUsuario: '@carlos',
+        password: '1234',
+        fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Mecánico',
+            descripcionServicio: 'Especialista en mecánica automotriz.',
+            categoria: 4,
+            publicaciones: [
+                {
+                    contenido: 'Cambio de aceite y mantenimiento general a su coche.',
+                    imagen: 'https://i.ytimg.com/vi/O1hF25Cowv8/maxresdefault.jpg'
+                },
+                {
+                    contenido: 'Alineo y balanceo para su coche a un modico precio.',
+                    imagen: 'https://lh3.googleusercontent.com/proxy/T4G4lhrD23ISfdtE1iKlFWL1O-Ug_E2m0-egQ7Gg_uPFbtkaVXOjjo3j3BkRS4ys9FbjVOXG-f2s-t1fTbmt9FyoxaSfsTgpTXWxq-wXiAlUJ96CMoqmSAPVLi9Eo7AK7wtYpyx4mZzwEZnhDXMJk2d8jcA2MNUk'
+                },
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Abogado',
+            descripcionServicio: 'Especialista en derecho de patentes.',
+            categoria: 9,
+            publicaciones: [
+                {
+                    contenido: 'Cualquier duda o consulta estamos a la orden para servirle y ser su representante legal.',
+                    imagen: 'https://robertdebry.com/wp-content/uploads/2019/02/shutterstock_746018851.jpg'
+                }
+            ]
+        }]
+    },
+    {
+        primerNombre: 'José',
+        segundoNombre: 'Alejandro',
+        primerApellido: 'Da silva',
+        segundoApellido: 'Santos',
+        edad: 21,
+        telefono: 88879924,
+        correo: 'jose@gmail.com',
+        nombreUsuario: '@jose',
+        password: '1234',
+        fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Fletes',
+            descripcionServicio: 'Viajes a todo lo ancho y largo del país.',
+            categoria: 6,
+            publicaciones: [
+                {
+                    contenido: 'Viajes y envios a todo el país por un comodo precio.',
+                    imagen: 'https://cdn.vox-cdn.com/thumbor/dXnH-ySPU85VXbzb9YOQE3Ac9sw=/0x0:4243x3079/1400x933/filters:focal(1783x1201:2461x1879):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65022936/TuSimple_Self_Drving_Truck_4_copy.0.jpg'
+                }
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Albañil',
+            descripcionServicio: 'Construccion industrial y residencial.',
+            categoria: 5,
+            publicaciones: [
+                {
+                    contenido: 'Orgulloso de haber sido parte de la creación de este gran proyecto, un logro mas a mi carrera.',
+                    imagen: 'https://cdn1.businessmodulehub.com/wp-content/uploads/2018/08/12100913/building-construction.jpg'
+                }
+            ]
+        }]
+    },
+    {
+        primerNombre: 'Luisa',
+        segundoNombre: 'Fernanda',
+        primerApellido: 'Ramirez',
+        segundoApellido: 'Cortez',
+        edad: 29,
+        telefono:988879924,
+        correo: 'luisa@gmail.com',
+        nombreUsuario: '@luisa',
+        password: '1234',
+        fotoPerfil: 'https://media.metrolatam.com/2019/07/13/cabello-2f2578c29f86795d310ba05b0b7a235d-1200x600.jpg',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Estilista',
+            descripcionServicio: 'Especialista en cortes y diseños de uñas.',
+            categoria: 3,
+            publicaciones: [
+                {
+                    contenido: 'Ven a mi salon y hazte un lindo diseño de uñas.',
+                    imagen: 'https://es.allnailart.com/wp-content/uploads/2019/04/un%CC%83as-acrilicas-2019-nude--883x1024.jpg'
+                }
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Tutora',
+            descripcionServicio: 'Tutora de nivel basico primaria e intermedio secundaria.',
+            categoria: 5,
+            publicaciones: [
+                {
+                    contenido: 'Se ofrecen clases de tutorias de todas las materias a 300 lps la hora, actualmente a traves de tele conferencias.',
+                    imagen: 'https://www.cambridgeenglish.org/Images/TE-AP-002-640460.jpg'
+                }
+            ]
+        }]
+    },
+    {
+        primerNombre: 'Dante',
+        segundoNombre: 'Josué',
+        primerApellido: 'Sandoval',
+        segundoApellido: 'Cortez',
+        edad: 10,
+        telefono:385879924,
+        correo: 'dante@gmail.com',
+        nombreUsuario: '@dante',
+        password: '1234',
+        fotoPerfil: 'https://img.icons8.com/bubbles/2x/user.png',
+        tipoUsuario: 2,
+        servicios: [
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Electricista',
+            descripcionServicio: 'Instalaciones electricas industriales y residenciales.',
+            categoria: 5,
+            publicaciones: [
+                {
+                    contenido: 'Instalaciones electricas respetando los estandares actuales.',
+                    imagen: 'https://electrical-engineering-portal.com/wp-content/uploads/2019/02/start-design-electrical-installation-1.jpg'
+                }
+            ]
+        },
+        {
+            _idServicio: ObjectId(),
+            nombreServicio: 'Cocinero',
+            descripcionServicio: 'Experto en cocina a la plancha.',
+            categoria: 7,
+            publicaciones: [
+                {
+                    contenido: 'Ven a mi restaurante ubicado a las alturas del blv Suyapa frente a la UNAH.',
+                    imagen: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/4/23/0/BX1607_Foolproof-Ribs-with-Barbecue-Sauce_s4x3.jpg.rend.hgtvcom.826.620.suffix/1556054940245.jpeg'
+                }
+            ]
+        }]
+    }
 ])
