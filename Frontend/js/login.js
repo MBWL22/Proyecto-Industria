@@ -69,44 +69,36 @@ function inicio(){
     if (validarCampoVacio("login-usuario") &&
         validarCampoVacio("login-password")) {
 
-       let usuarios = JSON.parse(localStorage.getItem('usuarios'));
-       let nombreUsuario = document.getElementById("login-usuario").value;
-       let contrasena = document.getElementById("login-password").value;
-
-       for (usuario of usuarios){
-            if(usuario.tipoUsuario == 0 &&  ( usuario.nombreUsuario == nombreUsuario || usuario.correo == nombreUsuario ) && usuario.contrasena ==  contrasena ){
-                let parametros = "usuario="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
+    let parametros = "correo="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
                 $.ajax({
-                    url: 'http://localhost:8888/login',
+                    url: 'http://localhost:8888/api/login',
                     data: parametros,
                     method: 'POST',
                     dataType:'JSON',
                     success:function(res){
-                        // el backend devuelve un codigo y un mensaje, 0 para credenciales validas y 1 para invalidas.
-                        // se puede loggear tanto con nombreUsuario como con correo.
                         console.log(res);
-                        if ( res.codigoRespuesta == 0 ){
-                            // OJOOOOOO: INSERTAR CODIGO DE REDIRECCIÓN AQUÍ
-                            // REDIRECCIONAR AQUI
+                        if (res){
                             ///varaibles de session 
                             sessionStorage.setItem('conectado', res.success);
-                            sessionStorage.setItem('tipoUsuario', res.tipoUsuario);
+                            sessionStorage.setItem('tipoUsuario', res.data.tipoUsuario);
                             window.location = 'servicios.html';
-                            console.log(res.mensaje);
-                        } else if ( res.codigoRespuesta == 1 ){
-                            alert(res.mensaje);
+                            console.log(res);
                         }
                     },
                     error:function(err){
-                        console.log(err);
+                        if(err.status === 404){
+                            //el usuario no existe
+                            console.log('el usuario no existe');
+                        }else if(err.status === 401){
+                            console.log('contrasena invalida');
+                        }else{
+                            console.log(err);
+                        }
+                        
                     }
                 })
             }
        }
-    }
-    
-}
-
 
 
 
