@@ -1,9 +1,11 @@
 'use strict'
 let conectado = sessionStorage.getItem('conectado');
 let tipoUsuario =sessionStorage.getItem('tipo_usuario');
+let nombreUsuario = sessionStorage.getItem('nombreUsuario')
 
 if(conectado){
- console.log('tipo usuario', tipoUsuario)
+ console.log('tipo usuario', tipoUsuario);
+ document.getElementById('a-usuario').innerText = nombreUsuario;
 }else{
     window.location.href = 'login.html';
 }

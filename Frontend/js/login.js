@@ -94,6 +94,7 @@ function inicio(){
                             });
                             sessionStorage.setItem('conectado', res.success);
                             sessionStorage.setItem('tipoUsuario', res.data.tipoUsuario);
+                            sessionStorage.setItem('nombreUsuario', res.data.usuario);
                             setTimeout(()=>window.location = 'servicios.html', 2500);
                             console.log(res);
                         }
