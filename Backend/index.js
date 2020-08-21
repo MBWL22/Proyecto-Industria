@@ -2,6 +2,7 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var database = require('./modules/database');
+const path = require('path');
 
 var app = express();
 
@@ -19,7 +20,12 @@ app.use("/api/datadb", datadb);
 app.use("/api/login", login);
 // Fin de la inclusión de routers.
 
+//client
+app.use(express.static("../Frontend"));
 
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "Frontend", "index.html"))
+    });
 
 
 // Definición de middlewares.
@@ -29,5 +35,5 @@ app.use("/api/login", login);
 // Fin de las definiciones de middlewares.
 
 app.listen(8888, function(){
-    console.log('Servidor del backend levantado en el puerto 8888');
+    console.log('Servidor del backend levantado en el puerto  8888');
 });
