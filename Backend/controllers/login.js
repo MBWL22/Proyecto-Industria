@@ -29,7 +29,8 @@ exports.login = async (req,res) => {
           if (user.contrasena === userData.password) {
             const dataUser = {
               usuario: user.usuario,
-              email: user.correo
+              email: user.correo,
+              tipoUsuario: user.tipoUsuario
             }
             return res.status(200).json({ 
                 success: true,
