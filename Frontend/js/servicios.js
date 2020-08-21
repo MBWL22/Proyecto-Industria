@@ -34,7 +34,7 @@ function buscarCategoria(i){
                                     <tr>
                                         <td>
                                             <div class="cont-img">
-                                                <img class="img-perfil" src="https://www.trecebits.com/wp-content/uploads/2019/02/Persona-1-445x445.jpg" alt="">
+                                                <img loading="lazy" class="img-perfil" src="${res[j].fotoPerfil}" alt="">
                                             </div>
                                         </td>
                                         <td>
@@ -69,4 +69,48 @@ function buscarCategoria(i){
 function mostrarUsuario(e){
     // console.log(e.target.dataset.id);
     let idUsuario = e.target.dataset.id;
+    let modal = document.getElementById('modal-body');
+    $.ajax({
+        url:`http://localhost:8888/api/datadb/userservice/${idUsuario}`,
+        method: 'GET',
+        dataType: 'JSON',
+        success: function(res){
+            console.log(res);
+            let divServicios = ``;
+            for (let servicios of res.servicios){
+                divServicios += `<div class="descripcion">${servicios.descripcionServicio}</div><br>`;
+            }
+            modal.innerHTML = `<div class="nombre-informacion">
+            Datos de contacto
+        </div>
+      <div class="cont-img-informacion">
+          <img class="img-informacion border border-info" src="${res.fotoPerfil}" alt="">
+      </div>
+      <div class="informacion-completa">
+          <table>
+            <tr>
+                <td><b>Nombre completo:</b></td>
+                <td class="dato">${res.primerNombre} ${res.segundoNombre} ${res.primerApellido} ${res.segundoApellido}</td>
+            </tr>
+            <tr>
+                <td><b>Correo electrónico:</b></td>
+                <td class="dato">${res.correo}</td>
+            </tr>
+            <tr>
+                <td><b>Teléfono:</b></td>
+                <td class="dato">${res.telefono}</td>
+            </tr>
+          </table>
+      </div>
+      <div class="cont-descripcion-completa">
+          <b>Descripción completa de servicios</b>
+          <div class="descripcion">
+            ${divServicios}
+          </div>
+      </div>`
+        },
+        error: function(err){
+            console.log(err);
+        }
+    });
 }
