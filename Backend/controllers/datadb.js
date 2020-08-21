@@ -12,6 +12,7 @@ exports.services = async (req, res) => {
         primerNombre :1, 
         segundoNombre: 1,
         primerApellido: 1,
+        fotoPerfil: 1,
         'servicios.nombreServicio' : 1,
         'servicios.descripcionServicio': 1,
         'servicios.categoria': 1,
@@ -52,6 +53,7 @@ exports.userservice = async (req, res) => {
         segundoApellido: 1,
         correo: 1,
         telefono: 1,
+        fotoPerfil: 1,
         'servicios.descripcionServicio': 1,
         'servicios.categoria': 1,
     });
