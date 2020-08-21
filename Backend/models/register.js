@@ -12,4 +12,4 @@ const registerSchema = new Schema ({
     fotoPerfil: {type: String, required: true},
 });
 
-module.exports = mongoose.model('usuarios', registerSchema)
+module.exports = mongoose.model('usuariosVisita', registerSchema)

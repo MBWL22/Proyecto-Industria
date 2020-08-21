@@ -28,7 +28,7 @@ db.usuarios.insert([
         nombreUsuario: '@diana',
         password: '12345',
         fotoPerfil: 'https://media.metrolatam.com/2019/07/13/cabello-2f2578c29f86795d310ba05b0b7a235d-1200x600.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -59,7 +59,7 @@ db.usuarios.insert([
         nombreUsuario: '@ledys',
         password: 'abcde',
         fotoPerfil: 'https://image.freepik.com/foto-gratis/peluquero-mujer-cortando-pelo-hombre_85574-4886.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -90,7 +90,7 @@ db.usuarios.insert([
         nombreUsuario: '@mario',
         password: '67890',
         fotoPerfil: 'https://d2xtbylwu97mzb.cloudfront.net/blog/corporativo/wp-content/uploads/2018/12/mentir-abogados-cliente-consecuencias-812x447.jpg?x83011',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -126,7 +126,7 @@ db.usuarios.insert([
         nombreUsuario: '@michael',
         password: '12345',
         fotoPerfil: 'https://image.freepik.com/foto-gratis/composicion-moderna-mecanico-automoviles_23-2147881912.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -158,7 +158,7 @@ db.usuarios.insert([
         nombreUsuario: '@bessy',
         password: 'abcde',
         fotoPerfil: 'https://eresmama.com/wp-content/uploads/2017/12/chica-profesora-500x334.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -189,7 +189,7 @@ db.usuarios.insert([
         nombreUsuario: '@oscar',
         password: '12345',
         fotoPerfil: 'https://www.thecooksters.com/wp-content/uploads/2019/08/pasion-600x397.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
@@ -222,7 +222,7 @@ db.usuarios.insert([
         nombreUsuario: '@samuel',
         password: 'abcde',
         fotoPerfil: 'https://previews.123rf.com/images/lacheev/lacheev1711/lacheev171100274/90818341-el-pastelero-est%C3%A1-preparando-un-pastel-en-la-cocina-de-la-pasteler%C3%ADa-.jpg',
-        tipoUsuario: 1,
+        tipoUsuario: 2,
         servicios: [
             {
                 _idServicio: ObjectId(),
