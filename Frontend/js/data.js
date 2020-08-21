@@ -5,6 +5,7 @@ TIPOS DE USARIOS
 2 para usuario admon
 */
 
+
 /*
 TIPOS DE SERVICIOS
 0 carpinteria
@@ -325,24 +326,46 @@ let usuarios = [{
           }else{
             event.preventDefault();
             event.stopPropagation();
-              for (let i = 0; i < usuarios.length; i++) {
-                  var element = usuarios[i].id;
-              }
-              let idUser = element + 1;
-              let nuevoUsuario = {
-                id: idUser,
-                tipoUsuario: 0,
-                nombre: document.getElementById("input-name").value,
-                apellido: document.getElementById("input-apellido").value,
-                nombreUsuario: document.getElementById("input-user").value,
-                contrasena: document.getElementById("input-password").value,
-                correo: document.getElementById("input-email").value,
-                telefono: document.getElementById("input-tel").value,
-                fotoPerfil: null
-            }
-            usuarios.push(nuevoUsuario);
-            localStorage.setItem('usuarios', JSON.stringify(usuarios));
-            window.location = 'login.html';
+            let usuario ={
+                    nombre: document.getElementById("input-name").value,
+                    apellido: document.getElementById("input-apellido").value,
+                    nombreUsuario: document.getElementById("input-user").value,
+                    contrasena: document.getElementById("input-password").value,
+                    correo: document.getElementById("input-email").value,
+                    telefono: document.getElementById("input-tel").value,
+            };
+            let parametros = `nombre=${usuario.nombre}&apellido=${usuario.apellido}&usuario=${usuario.nombreUsuario}&contrasena=${usuario.contrasena}&correo=${usuario.correo}&telefono=${usuario.telefono}`;
+            $.ajax({
+                url:'http://localhost:8888/api/register',
+                data: parametros,
+                method: 'POST',
+                datatype:'JSON',
+                success: function(res){
+                    console.log(res);
+                    if ( res.success == true ){
+                        swal.fire({
+                            icon: 'success',
+                            title: 'Usuario registrado con exito',
+                            timer: 2500,
+                            timerProgressBar: true,
+                        })
+                        setTimeout( () => window.location = 'login.html', 3000)
+                    }
+                },
+                error: function(err){
+                    console.log(err);
+                    let error = err.responseJSON.errors.errors[0];
+                    swal.fire({
+                        icon: 'error',
+                        title: error.param + ": " + error.msg,
+                        cancelButton: true,
+                        timer: 1500,
+                        timerProgressBar: true,
+                    })
+
+                }
+            })
+            // 
         }
         form.classList.add('was-validated'); 
            }, false);
@@ -353,20 +376,10 @@ let usuarios = [{
 
 
 
-
-
-/* console.log(getOficios())
-// console.log(usuarios[0].servicios[0].categoria); EJEMPLO DE COMO ACCEDER A UN ATTR
-
-function getOficios(){
-    let usuarioOficio=[];
-    let usuario;
-    for (let i = 0; i<usuarios.length; i++) {
-        usuario = usuarios[i];
-        if (usuario.tipoUsuario == 1){
-            usuarioOficio.push(usuario);
-            // console.log(usuarioOficio);
-        }
-    }
-    return usuarioOficio;
-} */
+    // tipoUsuario: 1,
+    // nombre: document.getElementById("input-name").value,
+    // apellido: document.getElementById("input-apellido").value,
+    // nombreUsuario: document.getElementById("input-user").value,
+    // contrasena: document.getElementById("input-password").value,
+    // correo: document.getElementById("input-email").value,
+    // telefono: document.getElementById("input-tel").value,
