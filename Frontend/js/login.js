@@ -66,10 +66,10 @@ function writetxt(){
 function inicio(){
     // validarEmail($("#login-usuario").val())
     // validando que los campos no esten vacios para ejecutar la peticion.
+
     if (validarCampoVacio("login-usuario") &&
         validarCampoVacio("login-password")) {
-
-    let parametros = "correo="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
+        let parametros = "correo="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
                 $.ajax({
                     url: 'http://localhost:8888/api/login',
                     data: parametros,
@@ -79,17 +79,44 @@ function inicio(){
                         console.log(res);
                         if (res){
                             ///varaibles de session 
+                            swal.fire({
+                                icon: 'success',
+                                title: 'Inicio de sesion exitoso',
+                                toast: true,
+                                position: 'top',
+                                showConfirmButton: false,
+                                timer: 2000,
+                                timerProgressBar: true,
+                                onOpen: (toast) => {
+                                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                                }
+                            });
                             sessionStorage.setItem('conectado', res.success);
                             sessionStorage.setItem('tipoUsuario', res.data.tipoUsuario);
-                            window.location = 'servicios.html';
+                            setTimeout(()=>window.location = 'servicios.html', 2500);
                             console.log(res);
                         }
                     },
                     error:function(err){
                         if(err.status === 404){
                             //el usuario no existe
+                            swal.fire({
+                                icon: 'error',
+                                title: 'el usuario no existe',
+                                cancelButton: true,
+                                timer: 2000,
+                                timerProgressBar: true
+                            });
                             console.log('el usuario no existe');
                         }else if(err.status === 401){
+                            swal.fire({
+                                icon: 'error',
+                                title: 'contrasena invalida',
+                                cancelButton: true,
+                                timer: 2000,
+                                timerProgressBar: true
+                            });
                             console.log('contrasena invalida');
                         }else{
                             console.log(err);
