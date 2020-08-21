@@ -26,7 +26,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- estilos de animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="css/styles.css" rel="stylesheet">
     <!--Estilos personalizados de los servicios del usuario tipo cliente-->
     <link  href="css/servicios.css"rel="stylesheet">
@@ -78,34 +80,34 @@
 
     <!--Inicio de la barra de menú con las categorias-->
     <div class="contenedor-barra">
-        <div class="categoria" id="cat-1">
+        <div class="categoria" id="cat-1" onclick="buscarCategoria(1)">
             Carpintería
         </div>
-        <div class="categoria" id="cat-2">
+        <div class="categoria" id="cat-2" onclick="buscarCategoria(3)">
             Belleza
         </div>
-        <div class="categoria" id="cat-3">
+        <div class="categoria" id="cat-3" onclick="buscarCategoria(2)">
             Sastrería
         </div>
-        <div class="categoria" id="cat-4">
+        <div class="categoria" id="cat-4" onclick="buscarCategoria(4)">
             Mecánica
         </div>
-        <div class="categoria" id="cat-5">
+        <div class="categoria" id="cat-5" onclick="buscarCategoria(5)">
             Construcción
         </div>
-        <div class="categoria" id="cat-6">
+        <div class="categoria" id="cat-6" onclick="buscarCategoria(7)">
             Cocina
         </div>
-        <div class="categoria" id="cat-7">
+        <div class="categoria" id="cat-7" onclick="buscarCategoria(10)">
             Doctores
         </div>
-        <div class="categoria" id="cat-8">
+        <div class="categoria" id="cat-8" onclick="buscarCategoria(8)">
             Tutores
         </div>
-        <div class="categoria" id="cat-9">
+        <div class="categoria" id="cat-9" onclick="buscarCategoria(6)">
             Fletes
         </div>
-        <div class="categoria" id="cat-10">
+        <div class="categoria" id="cat-10" onclick="buscarCategoria(9)">
             Abogados
         </div>
     </div>
@@ -115,8 +117,8 @@
     <!--Contenedor con los servicios según la categoria seleccionada-->
 
     <div class="container" id="cont-servicios">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 shadow p-3 mb-5 bg-white rounded mt-4">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 shadow p-3 mb-5 bg-white rounded mt-4">
               <table>
                   <tr>
                       <td>
@@ -139,10 +141,10 @@
                       </td>
                   </tr>
               </table>
-              <div style="float: right;"><button class="btn-mas-inf mt-4" data-toggle="modal" data-target="#masInformacion">Más información</button></div> 
-           <!--Fin del div de servicios-->
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 shadow p-3 mb-5 bg-white rounded mt-4">
+              <div style="float: right;"><button class="btn-mas-inf mt-4" data-toggle="modal" data-target="#masInformacion" data-id="">Más información</button></div> 
+          </div> -->
+          <!--Fin del div de servicios-->
+          <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 shadow p-3 mb-5 bg-white rounded mt-4">
             <table>
                 <tr>
                     <td>
@@ -165,11 +167,11 @@
                     </td>
                 </tr>
             </table>
-            <div style="float: right;"><button class="btn-mas-inf mt-4" data-toggle="modal" data-target="#masInformacion">Más información</button></div> 
+            <div style="float: right;"><button class="btn-mas-inf mt-4" data-toggle="modal" data-target="#masInformacion">Más información</button></div>  -->
          <!--Fin del div de servicios-->
-        </div>
+            <!-- </div> -->
           
-        </div>
+        <!-- </div> -->
       </div>
 
     <!--Fin del contenedor con los servicios según la categoria seleccionada-->
