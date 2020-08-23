@@ -1,12 +1,12 @@
 // Database: Conexión con la base de datos de Chambaline.
 var mongoose = require('mongoose');
 
-var servidor = process.env.DBCL;
-//var db = 'chambaline';
+var servidor = 'localhost:27017';
+var db = 'chambaline';
 
 class Database{
     constructor(){
-        mongoose.connect(`mongodb://${servidor}`)
+        mongoose.connect(`mongodb://${servidor}/${db}`)
         .then(()=>{
             console.log('Conectado a la base de datos de Chambaline');
         }).catch(error=>{
