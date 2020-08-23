@@ -30,10 +30,10 @@ app.use(express.static("../Frontend"));
 
 // Definición de middlewares.
 
-
+const PORT = 3000 || process.env.PORT;
 
 // Fin de las definiciones de middlewares.
 
-app.listen(8888, function(){
-    console.log('Servidor del backend levantado en el puerto  8888');
+app.listen(PORT, function(){
+    console.log(`Servidor del backend levantado en el puerto ${PORT}`);
 });
